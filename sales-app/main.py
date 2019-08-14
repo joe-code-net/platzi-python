@@ -1,15 +1,27 @@
 import sys
 
 #Clients List
-clients = ['Pablo', 'Ricardo']
+clients = [
+   {
+      'name': 'Pablo',
+      'company': 'Google'
+      'email': 'pablo@google.com'
+      'position': 'Software engineer'
+   },
+   {
+      'name': 'Ricardo'
+      'compay': 'Facebook'
+      'email': 'ricardo@facebook.com',
+      'position': 'Data engineer'
+   }
+]
 
 #Function to create a new client
 def create_client(client_name):
    global clients #global for use the clients variable with the global values
 	
-   if client_name not in clients:
-      #clients += client_name
-      clients.append(client_name)
+   if client not in clients:
+      clients.append(client)
    else:
       print('Client alredy is in the client\'s list')
 
